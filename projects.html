@@ -17,9 +17,14 @@
 
         <!-- Navigation Bar -->
         <nav class="top-nav">
-            <a href="index.html">關於我 & 核心技能</a>
-            <a href="projects.html" class="active">專題 & 專案經驗</a>
-            <a href="certs.html">專業證照 & 聯絡方式</a>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="搜尋站內內容...">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">關於我 & 核心技能</a>
+                <a href="projects.html" class="active">專題 & 專案經驗</a>
+                <a href="certs.html">專業證照 & 聯絡方式</a>
+            </div>
         </nav>
 
         <div class="header-content">
@@ -34,7 +39,7 @@
             <h3>專題 & 專案經驗</h3>
 
             <!-- Project 1 -->
-            <div class="project-card">
+            <div class="project-card searchable-item">
                 <div class="project-title">1. 基於 ESP32-S3 與 Android 之邊緣運算導盲避障系統 —「你是我的眼」</div>
                 <div class="project-subtitle">TinyML 邊緣運算 / FreeRTOS 實時多工 / 多軌網路通訊架構整合</div>
                 <ul>
@@ -52,7 +57,7 @@
             </div>
 
             <!-- Project 2 -->
-            <div class="project-card">
+            <div class="project-card searchable-item">
                 <div class="project-title">2. 微控制器藍牙與物聯網自動化警報系統</div>
                 <div class="project-subtitle">盛群單晶片開發 / 藍牙通訊介面映射 / 雲端自動化連動</div>
                 <ul>
@@ -67,21 +72,20 @@
             </div>
 
             <!-- Project 3 -->
-            <div class="project-card">
+            <div class="project-card searchable-item">
                 <div class="project-title">3. 獨立自主專案：自製智慧空氣清淨機</div>
                 <div class="project-subtitle">軟硬體端到端開發 / 電路板焊接 / 流體密封結構優化 / 成本控管</div>
                 <ul>
                     <li><strong>電路與控制實作：</strong> 學習PWM方波脈寬調變理論基礎，參考馬達驅動電路，並手焊電路板焊接；結合微處理器控制電路，達成手動/粉塵濃度自動雙模控制。</li>
                     <li><strong>流體與結構優化：</strong> 負責3D
                         外殼建模設計。針對清淨機核心的「短循環」痛點，特別設計了由木條與塑膠膜組成之風管密封結構，並黏貼海綿填充物以優化風道，確保過濾效能，同時預留未來易拆卸清洗之結構。</li>
-                    <li><strong>嚴謹驗證與成本控管：</strong> 使用專題實驗室之專業設備量測風量與信效度，確保產品實用性。獨立控管開發預算，成功將整體 BOM 成本精確壓低在 6,200
-                        元內。
+                    <li><strong>嚴謹驗證與成本控管：</strong> 使用專題實驗室之專業設備量測風量與信效度，確保產品實用性。
                     </li>
                 </ul>
             </div>
 
             <!-- Project 4 -->
-            <div class="project-card">
+            <div class="project-card searchable-item">
                 <div class="project-title">4. 畢業實務專案：智慧化室內空氣品質控制模組建構</div>
                 <div class="project-subtitle">感測器訊號處理 / 自動化控窗結構</div>
                 <ul>
@@ -97,6 +101,7 @@
         <p>&copy; 2026 郭宇豪 Yu-Hao Kuo.</p>
     </footer>
 
+    <script src="search.js" defer></script>
 </body>
 
 </html>

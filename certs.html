@@ -17,9 +17,14 @@
 
         <!-- Navigation Bar -->
         <nav class="top-nav">
-            <a href="index.html">關於我 & 核心技能</a>
-            <a href="projects.html">專題 & 專案經驗</a>
-            <a href="certs.html" class="active">專業證照 & 聯絡方式</a>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="搜尋站內內容...">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">關於我 & 核心技能</a>
+                <a href="projects.html">專題 & 專案經驗</a>
+                <a href="certs.html" class="active">專業證照 & 聯絡方式</a>
+            </div>
         </nav>
 
         <div class="header-content">
@@ -30,7 +35,7 @@
 
     <div class="container">
         <!-- Certifications -->
-        <section>
+        <section class="searchable-item">
             <h3>專業證照</h3>
             <ul class="cert-list">
                 <li>IT Specialist — Python 國際專業資訊人才認證</li>
@@ -41,7 +46,7 @@
         </section>
 
         <!-- Contact Info -->
-        <section>
+        <section class="searchable-item">
             <h3>聯絡方式</h3>
             <div class="contact-grid">
                 <div class="contact-item"><strong>電子信箱：</strong>hohotyt999888@gmail.com</div>
@@ -54,6 +59,7 @@
         <p>&copy; 2026 郭宇豪 Yu-Hao Kuo.</p>
     </footer>
 
+    <script src="search.js" defer></script>
 </body>
 
 </html>

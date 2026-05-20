@@ -50,6 +50,34 @@ nav.top-nav {
     justify-content: flex-end;
     align-items: center;
     padding: 30px 50px;
+    justify-content: space-between;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#searchInput {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    padding: 8px 18px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s;
+    width: 220px;
+}
+
+#searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#searchInput:focus {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: #0085a1;
+    width: 250px;
 }
 
 nav.top-nav a {
@@ -62,7 +90,7 @@ nav.top-nav a {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
-    margin-left: 20px;
+    margin: 0 0 0 15px;
     transition: all 0.3s;
 }
 
@@ -195,6 +223,10 @@ ul li {
     border-bottom: 1px solid #eeeeee;
 }
 
+.cert-list li:last-child {
+    border-bottom: none;
+}
+
 .contact-grid {
     display: flex;
     flex-direction: column;
@@ -234,10 +266,25 @@ footer p {
         justify-content: center;
         flex-wrap: wrap;
         padding: 20px;
+        flex-direction: column;
+    }
+
+    .search-container {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    #searchInput {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #searchInput:focus {
+        width: 100%;
     }
 
     nav.top-nav a {
-        margin: 5px 10px;
+        margin: 5px 8px;
     }
 
     .header-content {

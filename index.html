@@ -17,9 +17,14 @@
 
         <!-- Navigation Bar -->
         <nav class="top-nav">
-            <a href="index.html" class="active">關於我 & 核心技能</a>
-            <a href="projects.html">專題 & 專案經驗</a>
-            <a href="certs.html">專業證照 & 聯絡方式</a>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="搜尋站內內容...">
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">關於我 & 核心技能</a>
+                <a href="projects.html">專題 & 專案經驗</a>
+                <a href="certs.html">專業證照 & 聯絡方式</a>
+            </div>
         </nav>
 
         <div class="header-content">
@@ -30,7 +35,7 @@
 
     <div class="container">
         <!-- About Me -->
-        <section>
+        <section class="searchable-item">
             <h3>關於我</h3>
             <p>
                 透過職訓局課程與實作解決問題難點。擁有電機與能源工程背景，專長網頁設計、微控制器 (MCU) 以及物聯網 (IoT)。
@@ -39,22 +44,22 @@
         </section>
 
         <!-- Professional Skills -->
-        <section>
+        <section class="searchable-item">
             <h3>核心技術與專業能力</h3>
 
-            <div class="skill-category">
+            <div class="skill-category searchable-item">
                 <h4>嵌入式系統與韌體開發 (Embedded & Firmware)</h4>
                 <div class="tags">
                     <span class="tag">ESP32-S3 (ESP-IDF)</span>
                     <span class="tag">FreeRTOS 多工管理</span>
                     <span class="tag">HT66F2390 Holtek C</span>
                     <span class="tag">SPI 暫存器控制</span>
-                    <span class="tag">UART 鮑率與腳位映射</span>
-                    <span class="tag">Raspberry Pi</span>
+                    <span class="tag">UART 鮑率與腳位對應</span>
+                    <span class="tag">樹莓派 (Raspberry Pi)</span>
                 </div>
             </div>
 
-            <div class="skill-category">
+            <div class="skill-category searchable-item">
                 <h4>邊緣運算與人工智慧</h4>
                 <div class="tags">
                     <span class="tag">Edge Impulse</span>
@@ -63,7 +68,7 @@
                 </div>
             </div>
 
-            <div class="skill-category">
+            <div class="skill-category searchable-item">
                 <h4>物聯網與網路通訊 (IoT & Communications)</h4>
                 <div class="tags">
                     <span class="tag">HTTP WebServer (URI 註冊)</span>
@@ -73,7 +78,7 @@
                 </div>
             </div>
 
-            <div class="skill-category">
+            <div class="skill-category searchable-item">
                 <h4>行動裝置與WEP開發 (Software Development)</h4>
                 <div class="tags">
                     <span class="tag">Python</span>
@@ -84,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="skill-category">
+            <div class="skill-category searchable-item">
                 <h4>軟硬體整合與工程實務 (Hardware Engineering)</h4>
                 <div class="tags">
                     <span class="tag">PWM 理論基礎</span>
@@ -98,6 +103,7 @@
         <p>&copy; 2026 郭宇豪 Yu-Hao Kuo.</p>
     </footer>
 
+    <script src="search.js" defer></script>
 </body>
 
 </html>
